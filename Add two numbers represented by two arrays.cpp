@@ -37,6 +37,9 @@ class Solution{
     if(carry){
         ans.push_back(carry +'0');
     }
+    while(ans[ans.size()-1]=='0'){
+        ans.pop_back();
+    }
     reverse(ans.begin(),ans.end());
         return ans;
     }
