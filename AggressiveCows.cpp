@@ -23,7 +23,7 @@ public:
         int end=stalls[stalls.size()-1]-stalls[0];
         int mid=start+(end-start)/2;
         int ans=-1;
-        
+    
         while(start<=end){
             if(isPossible(stalls,k,mid)){
                 ans=mid;
